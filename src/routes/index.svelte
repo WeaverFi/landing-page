@@ -16,13 +16,13 @@
 
 <!-- SvelteKit Dynamic Header -->
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Home Page" />
+	<title>WeaverFi</title>
+	<meta name="description" content="The open-source, multi-chain DeFi portfolio tracker." />
 </svelte:head>
 
-<!-- Page Content -->
+<!-- Example Section -->
 <section>
-	<span>Home Page</span>
+	<span>Welcome to WeaverFi's landing page.</span>
 </section>
 
 <!-- #################################################################################################### -->
@@ -33,7 +33,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: calc(100vh - 105px);
 	}
 	
 </style>

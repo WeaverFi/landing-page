@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
-	--primary-color: #b9c6d2;
+	--primary-color: #7446B9;
 	--secondary-color: #161616;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
+	--accent-color: #FFDB29;
+	--font-color: #ffffff;
 }
 
 * {
@@ -18,6 +20,8 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	color: #ffffff;
-	background-color: var(--secondary-color);
+	font-family: 'Poppins', sans-serif;
+	color: var(--font-color);
+	background: var(--secondary-color);
+	overflow: hidden;
 }
