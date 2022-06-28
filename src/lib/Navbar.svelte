@@ -56,36 +56,36 @@
 		opacity: 1;
 	}
 
-	nav > div.brand {
+	div.brand {
 		display: flex;
 		align-items: center;
 		font-size: .8em;
 		cursor: pointer;
 	}
 
-	nav > div.brand > img {
+	div.brand > img {
 		height: 4em;
 		margin-right: .8em;
 	}
 
-	nav > div.brand > h1 {
+	div.brand > h1 {
 		font-size: 2em;
 		color: var(--primary-color);
 	}
 
-	nav > div.links {
+	div.links {
 		display: flex;
 		align-items: center;
 		gap: 1em;
 	}
 
-	nav > div.links > a > svg {
+	div.links > a > svg {
 		width: 2em;
 		height: 2em;
 		fill: var(--primary-color);
 	}
 
-	nav > div.links > a > svg:hover {
+	div.links > a > svg:hover {
 		fill: var(--accent-color);
 	}
 	

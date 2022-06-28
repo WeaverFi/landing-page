@@ -39,7 +39,7 @@
 <Header {appLink} />
 
 <!-- Main Highlights -->
-<Highlights />
+<Highlights {sdkLink} />
 
 <!-- Blockchain/Project/Token Support -->
 <Support />

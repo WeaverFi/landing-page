@@ -2,8 +2,8 @@
 
 :root {
 	--primary-color: #7446B9;
-	--secondary-color: #161616;
-	--terciary-color: #363636;
+	--secondary-color: hsl(0, 0%, 9%);
+	--terciary-color: hsl(0, 0%, 12%);
 	--accent-color: #FFDB29;
 	--font-color: #ffffff;
 }
