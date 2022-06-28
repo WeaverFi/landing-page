@@ -17,7 +17,8 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		flex: 1 0;
+		margin: 0 20vw;
+		padding-bottom: 10vh;
 		overflow: hidden auto;
 	}
 

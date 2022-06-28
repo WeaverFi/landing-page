@@ -3,6 +3,7 @@
 :root {
 	--primary-color: #7446B9;
 	--secondary-color: #161616;
+	--terciary-color: #363636;
 	--accent-color: #FFDB29;
 	--font-color: #ffffff;
 }
@@ -23,5 +24,4 @@ html, body {
 	font-family: 'Poppins', sans-serif;
 	color: var(--font-color);
 	background: var(--secondary-color);
-	overflow: hidden;
 }
