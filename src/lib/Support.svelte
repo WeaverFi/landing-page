@@ -2,6 +2,7 @@
 
 	// Imports:
 	import weaver from 'weaverfi';
+	import TokenWeb from './TokenWeb.svelte';
 
 	// SDK Values:
 	const chains = weaver.getAllChains();
@@ -24,7 +25,7 @@
 	<div class="content">
 
 		<!-- Token Image -->
-		<img src="" alt="Tokens">
+		<TokenWeb />
 
 		<!-- SDK Values -->
 		<div class="numbers">
