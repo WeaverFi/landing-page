@@ -30,7 +30,9 @@
 
 	section {
 		display: flex;
-		margin: 10em 0 5em;
+		margin-top: 5em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 
 	div.content {

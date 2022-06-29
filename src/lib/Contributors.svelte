@@ -39,6 +39,8 @@
 
 	section {
 		display: flex;
+		flex-direction: column;
+		padding-top: 5em;
 	}
 	
 </style>

@@ -29,7 +29,7 @@
 		<!-- SDK Values -->
 		<div class="numbers">
 			<span class="value">{chainCount}</span>
-			<span class="label">blockchains</span>
+			<span class="label">chains</span>
 			<span class="value">{projectCount}</span>
 			<span class="label">defi projects</span>
 			<span class="value">{tokenCount}</span>
@@ -46,6 +46,37 @@
 
 	section {
 		display: flex;
+		flex-direction: column;
+		padding-top: 5em;
+		padding-bottom: 5em;
+		color: var(--secondary-color);
+		background-color: var(--accent-color);
+	}
+
+	h2 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	div.content {
+		display: flex;
+		margin-top: 4em;
+	}
+
+	img {
+		flex: 1;
+	}
+
+	div.numbers {
+		display: flex;
+		flex-direction: column;
+		padding: 0 1em;
+	}
+
+	span.value {
+		margin-top: 1em;
+		font-size: 2em;
+		font-weight: bold;
 	}
 	
 </style>

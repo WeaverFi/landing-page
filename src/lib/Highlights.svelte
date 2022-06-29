@@ -72,8 +72,8 @@
 	}
 
 	h3 {
-		font-size: 2em;
 		margin-bottom: .5em;
+		font-size: 2em;
 	}
 
 	a {
