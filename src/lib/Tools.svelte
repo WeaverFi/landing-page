@@ -1,28 +1,22 @@
-<script lang="ts">
-
-	// :3
-
-	// <TODO> - maybe hover over each one to see more info?
-
-</script>
-
-<!-- #################################################################################################### -->
-
 <section>
 
 	<!-- Title -->
-	<h2>...and many more analytics and helpful tools:</h2>
+	<h2>. . . and many more analytics and helpful tools:</h2>
 
 	<!-- Tools List -->
-	<ul>
-		<li>Gas Tracker</li>
-		<li>Token Importer</li>
-		<li>Price History</li>
-		<li>Approvals</li>
-		<li>Yield Finder</li>
-		<li>DCA Calculator</li>
-		<li>DAO Overviews</li>
-	</ul>
+	<div class="tools">
+		<div>
+			<span>Gas Tracker</span>
+			<span>Price History</span>
+			<span>Yield Finder</span>
+			<span>DAO Overviews</span>
+		</div>
+		<div>
+			<span>Token Importer</span>
+			<span>Approvals</span>
+			<span>DCA Calculator</span>
+		</div>
+	</div>
 
 </section>
 
@@ -31,11 +25,34 @@
 <style>
 
 	section {
+		flex-direction: column;
+		padding-bottom: 5em;
+	}
+
+	h2 {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	div.tools {
+		display: flex;
+		justify-content: center;
+	}
+
+	div.tools > div {
 		display: flex;
 		flex-direction: column;
-		padding-top: 5em;
-		padding-bottom: 5em;
-		background-color: var(--terciary-color);
+		padding: 0 2em;
+	}
+
+	span {
+		margin: .5em 0;
+		font-size: 1.2em;
+	}
+
+	span::before {
+		content: '• ';
+		font-weight: bold;
 	}
 	
 </style>

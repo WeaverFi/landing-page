@@ -15,7 +15,7 @@
 		<div class="content right">
 			<h3>Open&#8209;source integrations</h3>
 			<span>The SDK that powers WeaverFi is open&#8209;source, allowing anyone to contribute support for new blockchains, protocols or track new tokens.</span>
-			<a href="{sdkLink}">Check out the SDK ></a>
+			<a href="{sdkLink}" target="__blank">Check out the SDK ></a>
 		</div>
 	</div>
 
@@ -44,7 +44,6 @@
 <style>
 
 	section {
-		display: flex;
 		flex-direction: column;
 		padding: 4em 30vw;
 		background-color: var(--terciary-color);

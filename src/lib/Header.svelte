@@ -29,7 +29,6 @@
 <style>
 
 	section {
-		display: flex;
 		margin-top: 5em;
 		padding-top: 5em;
 		padding-bottom: 5em;

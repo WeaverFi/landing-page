@@ -15,6 +15,7 @@
 	const twitterLink = 'https://twitter.com/cookietrack_io';
 	const discordLink = 'https://discord.com/invite/DzADcq7y75';
 	const sdkLink = 'https://github.com/CookieTrack-io/weaverfi';
+	const contributeLink = 'https://github.com/CookieTrack-io/weaverfi/blob/main/CONTRIBUTING.md';
 
 	// Initializations:
 	let scrollY = 0;
@@ -51,12 +52,4 @@
 <Tools />
 
 <!-- Contributors -->
-<Contributors {sdkLink} {discordLink} />
-
-<!-- #################################################################################################### -->
-
-<style>
-
-	/* CSS Goes Here */
-	
-</style>
+<Contributors {contributeLink} {discordLink} />

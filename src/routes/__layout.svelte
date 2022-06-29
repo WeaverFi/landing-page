@@ -17,7 +17,6 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 10vh;
 		overflow: hidden auto;
 	}
 

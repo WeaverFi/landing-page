@@ -45,7 +45,6 @@
 <style>
 
 	section {
-		display: flex;
 		flex-direction: column;
 		padding-top: 5em;
 		padding-bottom: 5em;

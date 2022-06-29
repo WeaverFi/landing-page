@@ -31,5 +31,7 @@ nav {
 }
 
 section {
+	display: flex;
 	padding: 0 22vw;
+	overflow: hidden;
 }
