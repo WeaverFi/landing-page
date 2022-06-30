@@ -147,6 +147,7 @@
     position: relative;
     overflow: hidden;
     display: block;
+    flex: 1;
   }
 
   #wrapper::after {

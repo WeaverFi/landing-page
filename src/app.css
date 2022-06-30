@@ -27,11 +27,71 @@ html, body {
 }
 
 nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
 	padding: 0 20vw;
+	isolation: isolate;
+	z-index: 99;
 }
 
 section {
 	display: flex;
+	width: 100%;
 	padding: 0 22vw;
 	overflow: hidden;
+}
+
+@media screen and (min-width: 2560px) {
+	nav, section {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	nav, section {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	nav, section {
+		font-size: .8em;
+	}
+	nav {
+		padding: 0 16vw;
+	}
+	section {
+		padding: 0 18vw;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	nav, section {
+		font-size: .7em;
+	}
+	nav {
+		padding: 0 12vw;
+	}
+	section {
+		padding: 0 14vw;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav {
+		padding: 0 8vw;
+	}
+	section {
+		padding: 0 10vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav {
+		padding: 0 4vw;
+	}
+	section {
+		padding: 0 6vw;
+	}
 }

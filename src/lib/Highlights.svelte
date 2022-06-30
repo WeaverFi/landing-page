@@ -25,7 +25,7 @@
 			<h3>Complete privacy</h3>
 			<span>This is not Web 2.0. Your data is maintained locally on your browser and there is no intrusive ads, trackers, or any database collecting user data.</span>
 		</div>
-		<img src="/images/safe.svg" alt="Privacy">
+		<img src="/images/safe.svg" alt="Privacy" class="padding">
 	</div>
 
 	<!-- Devices -->
@@ -82,6 +82,68 @@
 
 	img {
 		height: 15em;
+	}
+
+	img.padding {
+		padding: 1em;
+	}
+
+	@media screen and (max-width: 1270px) {
+		section {
+			padding: 4em 26vw;
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		section {
+			padding: 4em 22vw;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		section {
+			padding: 4em 18vw;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		section {
+			padding: 4em 14vw;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		section {
+			padding: 4em 10vw;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		section {
+			padding: 4em 6vw;
+		}
+		div.content.left {
+			padding-right: 2em;
+		}
+		div.content.right {
+			padding-left: 2em;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		section {
+			gap: 2em;
+		}
+		section > div {
+			flex-direction: column;
+			margin: 0;
+		}
+		div.content {
+			padding: 1em 0 !important;
+		}
+		div.content.left {
+			order: 1;
+		}
 	}
 	
 </style>

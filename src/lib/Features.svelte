@@ -53,5 +53,35 @@
 		margin: .5em 0;
 		font-size: 1.5em;
 	}
+
+	@media screen and (max-width: 800px) {
+		section {
+			gap: 2em;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		section {
+			flex-wrap: wrap;
+			padding-top: 4em;
+		}
+		div {
+			width: calc(50% - 2em);
+			padding: 1em 10%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		div {
+			padding: 1em 8%;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		div {
+			width: 100%;
+			padding: 1em 20%;
+		}
+	}
 	
 </style>

@@ -32,15 +32,10 @@
 <style>
 
 	nav {
-		position: fixed;
-		display: flex;
 		justify-content: space-between;
-		width: 100%;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		background-color: var(--secondary-color);
-		isolation: isolate;
-		z-index: 99;
 	}
 
 	nav::before {
@@ -89,6 +84,13 @@
 	div.links > a > svg:hover {
 		fill: var(--accent-color);
 		filter: drop-shadow(0 0 5px var(--accent-color));
+	}
+
+	@media screen and (max-width: 1270px) {
+		nav {
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
 	}
 	
 </style>

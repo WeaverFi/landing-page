@@ -39,7 +39,7 @@
 		justify-content: center;
 	}
 
-	div.tools > div {
+	div.tools div {
 		display: flex;
 		flex-direction: column;
 		padding: 0 2em;
@@ -53,6 +53,27 @@
 	span::before {
 		content: '• ';
 		font-weight: bold;
+	}
+
+	@media screen and (max-width: 450px) {
+		h2 {
+			margin: 0 3em 1em;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		h2 {
+			margin: 0 0 1em;
+		}
+		div.tools {
+			flex-direction: column;
+		}
+		div.tools div {
+			align-items: center;
+		}
+		span::before {
+			content: '';
+		}
 	}
 	
 </style>

@@ -73,5 +73,17 @@
 	img {
 		height: 35em;
 	}
+
+	@media screen and (max-width: 900px) {
+		img {
+			height: 30em;
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		section {
+			flex-direction: column;
+		}
+	}
 	
 </style>

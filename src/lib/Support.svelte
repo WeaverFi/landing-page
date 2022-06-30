@@ -24,17 +24,23 @@
 	<!-- Content -->
 	<div class="content">
 
-		<!-- Token Image -->
+		<!-- Token Web -->
 		<TokenWeb />
 
 		<!-- SDK Values -->
 		<div class="numbers">
-			<span class="value">{chainCount}</span>
-			<span class="label">chains</span>
-			<span class="value">{projectCount}</span>
-			<span class="label">defi projects</span>
-			<span class="value">{tokenCount}</span>
-			<span class="label">tokens tracked</span>
+			<div>
+				<span class="value">{chainCount}</span>
+				<span class="label">chains</span>
+			</div>
+			<div>
+				<span class="value">{projectCount}</span>
+				<span class="label">defi projects</span>
+			</div>
+			<div>
+				<span class="value">{tokenCount}</span>
+				<span class="label">tokens tracked</span>
+			</div>
 		</div>
 
 	</div>
@@ -63,20 +69,61 @@
 		margin-top: 4em;
 	}
 
-	img {
-		flex: 1;
-	}
-
 	div.numbers {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		gap: 1em;
 		padding: 0 1em;
 	}
 
+	div.numbers div {
+		display: flex;
+		flex-direction: column;
+	}
+
 	span.value {
-		margin-top: 1em;
 		font-size: 2em;
 		font-weight: bold;
+	}
+
+	@media screen and (max-width: 700px) {
+		div.content {
+			flex-direction: column;
+		}
+		div.numbers {
+			flex-direction: row;
+			justify-content: center;
+			padding: 1em 0 0;
+		}
+		div.numbers div {
+			flex-direction: row;
+			align-items: end;
+		}
+		span.value {
+			margin: 0 .2em 0 .5em;
+		}
+		span.value:first-of-type {
+			margin-left: 0;
+		}
+		span.label {
+			margin-bottom: .2em;
+			font-size: 1.2em;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		div.numbers {
+			flex-wrap: wrap;
+			padding-top: 2em;
+		}
+		div.numbers div {
+			justify-content: center;
+			width: 100%;
+		}
+		span.value {
+			margin-left: 0;
+		}
 	}
 	
 </style>
