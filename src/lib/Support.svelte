@@ -88,14 +88,14 @@
 	div.numbers div {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 		min-width: 10em;
 		padding: 5px 15px;
-		border-radius: 1em;
-		overflow: hidden;
+		text-align: center;
 		background-color: #fff4;
+		border: 2px solid var(--font-color);
+		border-radius: 1em;
 		backdrop-filter: blur(3px);
-		border: 2px solid white;
+		overflow: hidden;
 	}
 
 	span.value {
