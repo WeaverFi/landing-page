@@ -18,14 +18,14 @@
 
 <section>
 
+	<!-- Token Web -->
+	<TokenWeb />
+
 	<!-- Title -->
 	<h2>Unrivaled scalability throughout the DeFi ecosystem</h2>
 
 	<!-- Content -->
 	<div class="content">
-
-		<!-- Token Web -->
-		<TokenWeb />
 
 		<!-- SDK Values -->
 		<div class="numbers">
@@ -52,16 +52,24 @@
 <style>
 
 	section {
+		position: relative;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		padding-top: 5em;
 		padding-bottom: 5em;
 		color: var(--secondary-color);
 		background-color: var(--accent-color);
 	}
 
+	section > * {
+		z-index: 1;
+	}
+
 	h2 {
 		font-size: 2em;
 		text-align: center;
+		text-shadow: 1px 1px 2px white;
 	}
 
 	div.content {
@@ -71,15 +79,23 @@
 
 	div.numbers {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
-		gap: 1em;
+		gap: 4em;
 		padding: 0 1em;
 	}
 
 	div.numbers div {
 		display: flex;
 		flex-direction: column;
+		text-align: center;
+		min-width: 10em;
+		padding: 5px 15px;
+		border-radius: 1em;
+		overflow: hidden;
+		background-color: #fff4;
+		backdrop-filter: blur(3px);
+		border: 2px solid white;
 	}
 
 	span.value {
@@ -89,16 +105,21 @@
 
 	@media screen and (max-width: 700px) {
 		div.content {
-			flex-direction: column;
+			flex-direction: row;
+			margin-top: 0;
 		}
 		div.numbers {
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: center;
+			align-items: stretch;
 			padding: 1em 0 0;
+			gap: 2em;
+			margin-top: 2em;
 		}
 		div.numbers div {
-			flex-direction: row;
-			align-items: end;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 		span.value {
 			margin: 0 .2em 0 .5em;

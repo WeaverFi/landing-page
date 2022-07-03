@@ -3,15 +3,14 @@
   import { onDestroy, onMount } from "svelte";
   import WeaverFi from "weaverfi";
 
-  // Props:
-  export let width = 800;
-  export let height = 300;
-
   // Variables:
+  let wrapper: HTMLElement;
   let canvas: HTMLCanvasElement;
   let destroyed = false; // used to stop the render when the component is destroyed
   let angle = 0;
   let viewOffsetMult = 1;
+  let width = 0;
+  let height = 0;
   $: minRadius = height * viewOffsetMult;
   $: maxRadius = minRadius + Math.sqrt((width * width / 4) + (height * height));
   $: offsetX = width / 2;
@@ -58,13 +57,16 @@
   let lastFrame = 0;
   const draw = (ctx: CanvasRenderingContext2D) => {
 
+    // Check if destroyed:
+    if(destroyed) return;
+
     // Get frame time:
     const now = performance.now();
     const t = (now - lastFrame) / 1000;
     lastFrame = now;
 
     // Rotate:
-    angle += t * 0.1;
+    angle += t * 0.05;
     if(angle >= Math.PI * 2) angle = 0;
 
     // Draw web:
@@ -89,7 +91,7 @@
     }
 
     // Request next frame:
-    if(!destroyed) requestAnimationFrame(() => draw(ctx));
+    requestAnimationFrame(() => draw(ctx));
 
   };
 
@@ -99,14 +101,22 @@
     // Check if SSR:
     if(!browser) return;
 
+    // Calculate resize:
+    onResize();
+
     // Assign first random tokens:
     iconPlacements = [];
-    const numIcons = Math.min(10 * width / 32, icons.length);
+    const numIcons = Math.min(300, icons.length);
+    const availableIcons = new Set(icons.map((v,i) => i));
     for(let i = 0; i < numIcons; i++) {
+      const index = Math.floor(availableIcons.size * Math.random());
+      const iconIndex = [...availableIcons][index];
+      availableIcons.delete(iconIndex);
+      
       iconPlacements.push({
-        angle: Math.random() * Math.PI * 2,
-        amplitude: Math.random(),
-        iconIndex: Math.floor(Math.random() * icons.length)
+        angle: 2 * Math.PI * i / numIcons,
+        amplitude: ((i % 4) / 4) + 0.25 * Math.random(),
+        iconIndex: iconIndex
       });
     }
 
@@ -125,11 +135,19 @@
     destroyed = true;
   });
 
+  function onResize() {
+    const bb = wrapper.getBoundingClientRect();
+    width = bb.width;
+    height = bb.height;
+  }
+
 </script>
 
 <!-- #################################################################################################### -->
 
-<div id="wrapper" style="width:{width}px;height:{height}px">
+<svelte:window on:resize={onResize} />
+
+<div id="wrapper" bind:this={wrapper}>
   <canvas {width} {height} bind:this={canvas} />
   
   <!-- Icons -->
@@ -144,23 +162,28 @@
 
 <style>
   #wrapper {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     display: block;
-    flex: 1;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #wrapper::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(closest-side, #fff0 80%, var(--accent-color) 100%);
+    box-shadow: inset 0 0 40px var(--accent-color);
+    /* background: radial-gradient(closest-side, #fff0 80%, var(--accent-color) 100%); */
   }
 
   img.icon {
     position: absolute;
-    width: 32px;
-    height: 32px;
+    width: min(32px, 5vw);
+    height: min(32px, 5vw);
+    border-radius: 50%;
     top: 0;
     left: 0;
   }
