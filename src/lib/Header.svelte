@@ -2,6 +2,7 @@
 
 	// Initializations & Exports:
 	export let appLink: string;
+	const launched = false;
 
 </script>
 
@@ -12,11 +13,16 @@
 	<!-- Header Content -->
 	<div class="content">
 		<h2>The open&#8209;source, multi&#8209;chain DeFi portfolio tracker</h2>
-		<span>Try out WeaverFi for free today</span>
-		<a href="{appLink}">
-			<strong>Go to App</strong>
-			<i class="icofont-arrow-right" />
-		</a>
+		{#if launched}
+			<span>Try out WeaverFi for free today</span>
+			<a href="{appLink}">
+				<strong>Go to App</strong>
+				<i class="icofont-arrow-right" />
+			</a>
+		{:else}
+			<span></span>
+			<a href="/" style="cursor: not-allowed;"><strong>Coming Soon</strong></a>
+		{/if}
 	</div>
 
 	<!-- Weavey -->
