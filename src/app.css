@@ -6,6 +6,7 @@
 	--terciary-color: hsl(0, 0%, 12%);
 	--accent-color: #FFDB29;
 	--font-color: #ffffff;
+	--secondary-font-color: hsla(0, 0%, 100%, 0.5);
 }
 
 * {
@@ -26,39 +27,43 @@ html, body {
 	background: var(--secondary-color);
 }
 
-nav {
-	position: fixed;
+nav, footer, section {
 	display: flex;
 	width: 100%;
+}
+
+nav, footer {
 	padding: 0 20vw;
+}
+
+nav {
+	position: fixed;
 	isolation: isolate;
 	z-index: 99;
 }
 
 section {
-	display: flex;
-	width: 100%;
 	padding: 0 22vw;
 	overflow: hidden;
 }
 
 @media screen and (min-width: 2560px) {
-	nav, section {
+	nav, footer, section {
 		font-size: 1.2em;
 	}
 }
 
 @media screen and (min-width: 3840px) {
-	nav, section {
+	nav, footer, section {
 		font-size: 2em;
 	}
 }
 
 @media screen and (max-width: 1280px) {
-	nav, section {
+	nav, footer, section {
 		font-size: .8em;
 	}
-	nav {
+	nav, footer {
 		padding: 0 16vw;
 	}
 	section {
@@ -67,10 +72,10 @@ section {
 }
 
 @media screen and (max-width: 1270px) {
-	nav, section {
+	nav, footer, section {
 		font-size: .7em;
 	}
-	nav {
+	nav, footer {
 		padding: 0 12vw;
 	}
 	section {
@@ -79,7 +84,7 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
-	nav {
+	nav, footer {
 		padding: 0 8vw;
 	}
 	section {
@@ -88,7 +93,7 @@ section {
 }
 
 @media screen and (max-width: 800px) {
-	nav {
+	nav, footer {
 		padding: 0 4vw;
 	}
 	section {

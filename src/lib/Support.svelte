@@ -69,7 +69,7 @@
 	h2 {
 		font-size: 2em;
 		text-align: center;
-		text-shadow: 1px 1px 2px white;
+		text-shadow: 1px 1px 2px var(--font-color);
 	}
 
 	div.content {
@@ -91,15 +91,19 @@
 		min-width: 10em;
 		padding: 5px 15px;
 		text-align: center;
-		background-color: #fff4;
+		background-color: hsla(0, 0%, 100%, 0.25);
 		border: 2px solid var(--font-color);
 		border-radius: 1em;
-		backdrop-filter: blur(3px);
+		backdrop-filter: blur(5px);
 		overflow: hidden;
 	}
 
 	span.value {
 		font-size: 2em;
+		font-weight: bold;
+	}
+
+	span.label {
 		font-weight: bold;
 	}
 

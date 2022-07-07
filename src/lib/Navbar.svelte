@@ -75,14 +75,17 @@
 		gap: 1em;
 	}
 
+	div.links > a {
+		display: flex;
+	}
+
 	div.links > a > svg {
-		width: 2em;
-		height: 2em;
-		fill: var(--primary-color);
+		width: 1.8em;
+		height: 1.8em;
+		fill: var(--font-color);
 	}
 
 	div.links > a > svg:hover {
-		fill: var(--accent-color);
 		filter: drop-shadow(0 0 5px var(--accent-color));
 	}
 

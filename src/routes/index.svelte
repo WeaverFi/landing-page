@@ -4,18 +4,22 @@
 	import Tools from '$lib/Tools.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
 	import Support from '$lib/Support.svelte';
 	import Features from '$lib/Features.svelte';
 	import Highlights from '$lib/Highlights.svelte';
 	import Contributors from '$lib/Contributors.svelte';
 
 	// Links:
-	const appLink = 'https://app.weaver.fi';
-	const githubLink = 'https://github.com/CookieTrack-io';
-	const twitterLink = 'https://twitter.com/cookietrack_io';
-	const discordLink = 'https://discord.com/invite/DzADcq7y75';
-	const sdkLink = 'https://github.com/CookieTrack-io/weaverfi';
-	const contributeLink = 'https://github.com/CookieTrack-io/weaverfi/blob/main/CONTRIBUTING.md';
+	const links = {
+		app: 'https://app.weaver.fi',
+		github: 'https://github.com/CookieTrack-io',
+		twitter: 'https://twitter.com/cookietrack_io',
+		discord: 'https://discord.com/invite/DzADcq7y75',
+		sdk: 'https://github.com/CookieTrack-io/weaverfi',
+		contribute: 'https://github.com/CookieTrack-io/weaverfi/blob/main/CONTRIBUTING.md',
+		gitcoin: 'https://gitcoin.co/grants/5854/weaverfi-the-open-source-defi-portfolio-tracker'
+	}
 
 	// Initializations:
 	let scrollY = 0;
@@ -34,13 +38,13 @@
 <svelte:window bind:scrollY />
 
 <!-- Navbar -->
-<Navbar bind:scrollY {twitterLink} {discordLink} {githubLink} />
+<Navbar bind:scrollY twitterLink={links.twitter} discordLink={links.discord} githubLink={links.github} />
 
 <!-- Header Section -->
-<Header {appLink} />
+<Header appLink={links.app} />
 
 <!-- Main Highlights -->
-<Highlights {sdkLink} />
+<Highlights sdkLink={links.sdk} />
 
 <!-- Blockchain/Project/Token Support -->
 <Support />
@@ -52,4 +56,7 @@
 <Tools />
 
 <!-- Contributors -->
-<Contributors {contributeLink} {discordLink} />
+<Contributors contributeLink={links.contribute} discordLink={links.discord} />
+
+<!-- Footer -->
+<Footer {links} />
