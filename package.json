@@ -1,6 +1,6 @@
 {
   "name": "weaverfi",
-  "version": "0.1.1",
+  "version": "0.3.9",
   "type": "module",
   "private": true,
   "scripts": {
@@ -17,9 +17,9 @@
     "svelte-check": "^2.7.2",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
-    "typescript": "~4.6.2"
+    "typescript": "^4.7.4"
   },
   "dependencies": {
-    "weaverfi": "^1.29.7"
+    "weaverfi": "1.29.7"
   }
 }

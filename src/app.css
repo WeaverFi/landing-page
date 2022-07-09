@@ -2,9 +2,11 @@
 
 :root {
 	--primary-color: #7446B9;
-	--secondary-color: #161616;
+	--secondary-color: hsl(0, 0%, 9%);
+	--terciary-color: hsl(0, 0%, 12%);
 	--accent-color: #FFDB29;
 	--font-color: #ffffff;
+	--secondary-font-color: hsla(0, 0%, 100%, 0.5);
 }
 
 * {
@@ -23,5 +25,78 @@ html, body {
 	font-family: 'Poppins', sans-serif;
 	color: var(--font-color);
 	background: var(--secondary-color);
+}
+
+nav, footer, section {
+	display: flex;
+	width: 100%;
+}
+
+nav, footer {
+	padding: 0 20vw;
+}
+
+nav {
+	position: fixed;
+	isolation: isolate;
+	z-index: 99;
+}
+
+section {
+	padding: 0 22vw;
 	overflow: hidden;
+}
+
+@media screen and (min-width: 2560px) {
+	nav, footer, section {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	nav, footer, section {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	nav, footer, section {
+		font-size: .8em;
+	}
+	nav, footer {
+		padding: 0 16vw;
+	}
+	section {
+		padding: 0 18vw;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	nav, footer, section {
+		font-size: .7em;
+	}
+	nav, footer {
+		padding: 0 12vw;
+	}
+	section {
+		padding: 0 14vw;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav, footer {
+		padding: 0 8vw;
+	}
+	section {
+		padding: 0 10vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav, footer {
+		padding: 0 4vw;
+	}
+	section {
+		padding: 0 6vw;
+	}
 }

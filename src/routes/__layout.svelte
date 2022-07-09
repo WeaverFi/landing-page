@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
 	// Imports:
 	import '../app.css';
@@ -17,7 +17,6 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		flex: 1 0;
 		overflow: hidden auto;
 	}
 

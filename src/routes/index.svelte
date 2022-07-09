@@ -1,14 +1,28 @@
-<script>
+<script lang="ts">
 
 	// Imports:
-	import { onMount } from 'svelte';
+	import Tools from '$lib/Tools.svelte';
+	import Navbar from '$lib/Navbar.svelte';
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import Support from '$lib/Support.svelte';
+	import Features from '$lib/Features.svelte';
+	import Highlights from '$lib/Highlights.svelte';
+	import Contributors from '$lib/Contributors.svelte';
+
+	// Links:
+	const links = {
+		app: 'https://app.weaver.fi',
+		github: 'https://github.com/WeaverFi',
+		twitter: 'https://twitter.com/weaver_fi',
+		discord: 'https://discord.com/invite/DzADcq7y75',
+		sdk: 'https://github.com/WeaverFi/weaverfi',
+		contribute: 'https://github.com/WeaverFi/weaverfi/blob/main/CONTRIBUTING.md',
+		gitcoin: 'https://gitcoin.co/grants/5854/weaverfi-the-open-source-defi-portfolio-tracker'
+	}
 
 	// Initializations:
-	const sdkRepo = 'https://github.com/CookieTrack-io/weaverfi';
-
-	onMount(() => {
-		// :3
-	});
+	let scrollY = 0;
 	
 </script>
 
@@ -20,36 +34,29 @@
 	<meta name="description" content="The open-source, multi-chain DeFi portfolio tracker." />
 </svelte:head>
 
-<!-- Temporary Section -->
-<section class="temporary">
-	<img src="/images/weavey.png" alt="Weavey">
-	<span>WeaverFi is coming.</span>
-	<span class="sdk">Contribute to building our open-source SDK on <a href="{sdkRepo}">GitHub</a>.</span>
-</section>
+<!-- Window Bindings -->
+<svelte:window bind:scrollY />
 
-<!-- #################################################################################################### -->
+<!-- Navbar -->
+<Navbar bind:scrollY twitterLink={links.twitter} discordLink={links.discord} githubLink={links.github} />
 
-<style>
+<!-- Header Section -->
+<Header appLink={links.app} />
 
-	section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+<!-- Main Highlights -->
+<Highlights sdkLink={links.sdk} />
 
-	.temporary {
-		flex-direction: column;
-		height: 100vh;
-	}
+<!-- Blockchain/Project/Token Support -->
+<Support />
 
-	.temporary > img {
-		height: 20em;
-	}
+<!-- Features -->
+<Features />
 
-	.temporary > span {
-		margin-top: 2em;
-		padding: 0 10vw;
-		text-align: center;
-	}
-	
-</style>
+<!-- Tools -->
+<Tools />
+
+<!-- Contributors -->
+<Contributors contributeLink={links.contribute} discordLink={links.discord} />
+
+<!-- Footer -->
+<Footer {links} />
