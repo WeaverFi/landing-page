@@ -13,11 +13,11 @@
 	// Links:
 	const links = {
 		app: 'https://app.weaver.fi',
-		github: 'https://github.com/CookieTrack-io',
-		twitter: 'https://twitter.com/cookietrack_io',
+		github: 'https://github.com/WeaverFi',
+		twitter: 'https://twitter.com/weaver_fi',
 		discord: 'https://discord.com/invite/DzADcq7y75',
-		sdk: 'https://github.com/CookieTrack-io/weaverfi',
-		contribute: 'https://github.com/CookieTrack-io/weaverfi/blob/main/CONTRIBUTING.md',
+		sdk: 'https://github.com/WeaverFi/weaverfi',
+		contribute: 'https://github.com/WeaverFi/weaverfi/blob/main/CONTRIBUTING.md',
 		gitcoin: 'https://gitcoin.co/grants/5854/weaverfi-the-open-source-defi-portfolio-tracker'
 	}
 
