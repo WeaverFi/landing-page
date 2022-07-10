@@ -60,6 +60,7 @@
 		padding-bottom: 5em;
 		color: var(--secondary-color);
 		background-color: var(--accent-color);
+		box-shadow: 0 0 20px black;
 	}
 
 	section > * {
