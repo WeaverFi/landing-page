@@ -1,6 +1,6 @@
 {
   "name": "weaverfi",
-  "version": "0.3.10",
+  "version": "0.4.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/adapter-netlify": "1.0.0-next.65",
+    "@sveltejs/kit": "1.0.0-next.350",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.2",
     "svelte-preprocess": "^4.10.7",
@@ -20,6 +20,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "weaverfi": "1.29.7"
+    "weaverfi": "1.30.2"
   }
 }
