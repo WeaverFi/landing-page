@@ -13,7 +13,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-netlify": "next",
 		"@sveltejs/kit": "next",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
