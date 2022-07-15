@@ -1,6 +1,6 @@
 {
 	"name": "weaverfi-landing-page",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"type": "module",
 	"private": true,
 	"scripts": {
@@ -13,7 +13,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-netlify": "next",
+		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.7.1",
