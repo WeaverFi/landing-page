@@ -7,4 +7,10 @@ The landing page for the WeaverFi app.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1d5a1e-0648-45d5-ab72-f90a72d3d2bd/deploy-status)](https://app.netlify.com/sites/weaverfi-landing-page/deploys)
 
+## Local Development
+
+Install dependencies with `npm i`.
+
+Run dev server with `npm run dev`.
+
 [banner]: /Banner.png "WeaverFi"

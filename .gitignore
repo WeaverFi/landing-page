@@ -1,7 +1,8 @@
 .DS_Store
-.netlify/
-.svelte-kit/
+node_modules
+/build
+/.svelte-kit
+/.netlify
+/package
 .env
-build/
-node_modules/
 package-lock.json
