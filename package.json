@@ -23,6 +23,6 @@
 		"vite": "^3.0.0"
 	},
   "dependencies": {
-    "weaverfi": "1.30.3"
+    "weaverfi": "1.30.6"
   }
 }
