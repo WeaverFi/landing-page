@@ -13,6 +13,7 @@
 	// Links:
 	const links = {
 		app: 'https://app.weaver.fi',
+		api: 'https://api.weaver.fi',
 		github: 'https://github.com/WeaverFi',
 		twitter: 'https://twitter.com/weaver_fi',
 		discord: 'https://discord.com/invite/DzADcq7y75',

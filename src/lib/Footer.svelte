@@ -28,6 +28,7 @@
 	<div class="dev">
 		<h3>Developer Links</h3>
 		<a href="{links.sdk}" target="__blank">WeaverFi SDK</a>
+		<a href="{links.api}" target="__blank">WeaverFi API</a>
 		<a href="{links.contribute}" target="__blank">Contribution Guidelines</a>
 	</div>
 
