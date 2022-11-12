@@ -45,7 +45,7 @@
 <Header appLink={links.app} />
 
 <!-- Main Highlights -->
-<Highlights sdkLink={links.sdk} />
+<Highlights sdkLink={links.sdk} apiLink={links.api} />
 
 <!-- Blockchain/Project/Token Support -->
 <Support />
