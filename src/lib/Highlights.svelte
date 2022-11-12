@@ -37,6 +37,16 @@
 		</div>
 	</div>
 
+	<!-- API -->
+	<div class="api">
+		<div class="content left">
+			<h3>Open API</h3>
+			<span>Take advantage of the <i>easiest</i> way to interact with WeaverFi and use the public API!</span>
+			<a href="https://api.weaver.fi" target="__blank">Check out the API ></a>
+		</div>
+		<img src="/images/api.svg" alt="API">
+	</div>
+
 </section>
 
 <!-- #################################################################################################### -->
