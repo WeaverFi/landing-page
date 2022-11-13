@@ -57,7 +57,7 @@
 	section {
 		flex-direction: column;
 		padding: 4em 30vw;
-		background-color: var(--terciary-color);
+		background-color: var(--tertiaryColor);
 	}
 
 	section > div {
@@ -88,7 +88,7 @@
 
 	a {
 		margin-top: 1em;
-		color: var(--accent-color);
+		color: var(--accentColor);
 	}
 
 	img {

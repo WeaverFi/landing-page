@@ -13,7 +13,7 @@
 <nav class:shadow={scrollY > 0}>
 
 	<!-- WeaverFi Branding -->
-	<div class="brand" on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+	<div class="brand" on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })} on:keydown={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
 		<img src="/images/weavey.png" alt="Weavey">
 		<h1>WeaverFi</h1>
 	</div>
@@ -35,7 +35,7 @@
 		justify-content: space-between;
 		padding-top: 1em;
 		padding-bottom: 1em;
-		background-color: var(--secondary-color);
+		background-color: var(--secondaryColor);
 	}
 
 	nav::before {
@@ -66,7 +66,7 @@
 
 	div.brand > h1 {
 		font-size: 2em;
-		color: var(--primary-color);
+		color: var(--primaryColor);
 	}
 
 	div.links {
@@ -82,11 +82,11 @@
 	div.links > a > svg {
 		width: 1.8em;
 		height: 1.8em;
-		fill: var(--font-color);
+		fill: var(--fontColor);
 	}
 
 	div.links > a > svg:hover {
-		filter: drop-shadow(0 0 5px var(--accent-color));
+		filter: drop-shadow(0 0 5px var(--accentColor));
 	}
 
 	@media screen and (max-width: 1270px) {

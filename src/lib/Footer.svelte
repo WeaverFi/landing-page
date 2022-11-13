@@ -58,7 +58,7 @@
 	}
 
 	p, a {
-		color: var(--secondary-font-color);
+		color: var(--secondaryFontColor);
 	}
 
 	a {
@@ -72,7 +72,7 @@
 		width: 1.2em;
 		height: 1.2em;
 		margin-right: .5em;
-		fill: var(--secondary-font-color);
+		fill: var(--secondaryFontColor);
 	}
 
 	@media screen and (max-width: 800px) {

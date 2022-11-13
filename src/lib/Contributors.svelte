@@ -51,7 +51,7 @@
 		position: relative;
 		flex-direction: column;
 		padding: 5em 16vw 10em;
-		background-color: var(--terciary-color);
+		background-color: var(--tertiaryColor);
 	}
 
 	img {
@@ -89,9 +89,9 @@
 		margin-top: 1em;
 		padding: .6em;
 		font-size: 1.2em;
-		color: var(--secondary-color);
-		background-color: var(--accent-color);
-		border: 3px solid var(--accent-color);
+		color: var(--secondaryColor);
+		background-color: var(--accentColor);
+		border: 3px solid var(--accentColor);
 		border-radius: 2em;
 		text-align: center;
 		text-decoration: none;
@@ -100,7 +100,7 @@
 
 	a:hover {
 		color: white;
-		background-color: var(--primary-color);
+		background-color: var(--primaryColor);
 	}
 
 	@media screen and (max-width: 1280px) {

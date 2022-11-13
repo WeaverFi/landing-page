@@ -46,7 +46,7 @@
 
 	img {
 		height: 4em;
-		filter: drop-shadow(0 0 10px var(--primary-color));
+		filter: drop-shadow(0 0 10px var(--primaryColor));
 	}
 
 	h3 {

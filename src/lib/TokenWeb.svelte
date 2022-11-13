@@ -176,7 +176,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    box-shadow: inset 0 0 40px var(--accent-color);
+    box-shadow: inset 0 0 40px var(--accentColor);
   }
 
   img.icon {

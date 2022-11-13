@@ -58,8 +58,8 @@
 		align-items: center;
 		padding-top: 5em;
 		padding-bottom: 5em;
-		color: var(--secondary-color);
-		background-color: var(--accent-color);
+		color: var(--secondaryColor);
+		background-color: var(--accentColor);
 		box-shadow: 0 0 20px black;
 	}
 
@@ -70,7 +70,7 @@
 	h2 {
 		font-size: 2em;
 		text-align: center;
-		text-shadow: 1px 1px 2px var(--font-color);
+		text-shadow: 1px 1px 2px var(--fontColor);
 	}
 
 	div.content {
@@ -93,7 +93,7 @@
 		padding: 5px 15px;
 		text-align: center;
 		background-color: hsla(0, 0%, 100%, 0.25);
-		border: 2px solid var(--font-color);
+		border: 2px solid var(--fontColor);
 		border-radius: 1em;
 		backdrop-filter: blur(5px);
 		overflow: hidden;

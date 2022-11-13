@@ -62,9 +62,9 @@
 		margin-bottom: 2em;
 		padding: .8em;
 		font-size: 1.2em;
-		color: var(--secondary-color);
-		background-color: var(--accent-color);
-		border: 3px solid var(--accent-color);
+		color: var(--secondaryColor);
+		background-color: var(--accentColor);
+		border: 3px solid var(--accentColor);
 		border-radius: 2em;
 		text-align: center;
 		text-decoration: none;
@@ -73,7 +73,7 @@
 
 	div.content > a:hover {
 		color: white;
-		background-color: var(--primary-color);
+		background-color: var(--primaryColor);
 	}
 
 	img {
