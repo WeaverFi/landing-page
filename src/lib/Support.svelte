@@ -1,15 +1,21 @@
 <script lang="ts">
 
 	// Imports:
+	import { browser } from '$app/environment';
 	import weaver from 'weaverfi';
 	import TokenWeb from './TokenWeb.svelte';
 
+	// Type Imports:
+	import type { Chain, TokenData } from 'weaverfi/dist/types';
+
 	// SDK Values:
-	const chains = weaver.getAllChains();
+	const chains: Chain[] = browser ? weaver.getAllChains() : [];
+	const projects: Partial<Record<Chain, string[]>> = browser ? weaver.getAllProjects() : {};
+	const tokens: Partial<Record<Chain, TokenData[]>> = browser ? weaver.getAllTokens() : {};
+
+	// Calculated Counts:
 	const chainCount = chains.length;
-	const projects = weaver.getAllProjects();
 	const projectCount = Object.values(projects).reduce((sum, pList) => sum + pList.length, 0);
-	const tokens = weaver.getAllTokens();
 	const tokenCount = Object.values(tokens).reduce((sum, tList) => sum + tList.length, 0);
 
 </script>

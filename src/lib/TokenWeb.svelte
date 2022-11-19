@@ -5,14 +5,15 @@
   import { onDestroy, onMount } from "svelte";
   import weaver from "weaverfi";
 
+  // Type Imports:
+  import type { URL } from 'weaverfi/dist/types';
+
   // Initializations:
   let wrapper: HTMLElement;
   let canvas: HTMLCanvasElement;
   let destroyed = false;
   let lastFrame = 0;
-
-  // Icons:
-  let icons = [...new Set(Object.values(weaver.getAllTokens()).reduce((a,b) => [...a, ...b]).map(tokenData => tokenData.logo))];
+  let icons: URL[] = [];
   let iconPlacements: { angle: number, amplitude: number, iconIndex: number }[] = [];
 
   // Dimensions:
@@ -122,6 +123,7 @@
 
   onMount(() => {
     if(browser) {
+      icons = [...new Set(Object.values(weaver.getAllTokens()).reduce((a,b) => [...a, ...b]).map(tokenData => tokenData.logo))];
       onResize();
       assignRandomTokens();
   
