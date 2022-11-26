@@ -6,7 +6,7 @@
   import weaver from "weaverfi";
 
   // Type Imports:
-  import type { URL } from 'weaverfi/dist/types';
+  import type { URL } from 'weaverfi';
 
   // Initializations:
   let wrapper: HTMLElement;

@@ -6,7 +6,7 @@
 	import TokenWeb from './TokenWeb.svelte';
 
 	// Type Imports:
-	import type { Chain, TokenData } from 'weaverfi/dist/types';
+	import type { Chain, TokenData } from 'weaverfi';
 
 	// SDK Values:
 	const chains: Chain[] = browser ? weaver.getAllChains() : [];
