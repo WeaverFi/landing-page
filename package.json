@@ -1,6 +1,6 @@
 {
 	"name": "weaverfi-landing-page",
-	"version": "0.5.5",
+	"version": "0.5.6",
 	"type": "module",
 	"private": true,
 	"scripts": {
@@ -10,13 +10,12 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "next",
-		"@sveltejs/kit": "1.0.0-next.553",
-		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.1",
-		"svelte-preprocess": "^4.10.7",
-		"tslib": "^2.4.0",
-		"typescript": "^4.7.4",
-		"vite": "^3.0.9"
+		"@sveltejs/kit": "1.0.11",
+		"svelte": "^3.55.1",
+		"svelte-check": "^3.0.2",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.4",
+		"vite": "^4.0.4"
 	},
 	"dependencies": {
 		"weaverfi": "1.35.3"

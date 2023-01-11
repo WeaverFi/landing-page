@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 
   // Imports:
   import { browser } from "$app/environment";
