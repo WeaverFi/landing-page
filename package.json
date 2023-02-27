@@ -18,6 +18,6 @@
 		"vite": "^4.0.4"
 	},
 	"dependencies": {
-		"weaverfi": "1.35.4"
+		"weaverfi": "1.36.0"
 	}
 }
