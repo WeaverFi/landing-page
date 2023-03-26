@@ -1,7 +1,6 @@
 <script lang="ts">
 
 	// Imports:
-	import Tools from '$lib/Tools.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -52,9 +51,6 @@
 
 <!-- Features -->
 <Features />
-
-<!-- Tools -->
-<Tools />
 
 <!-- Contributors -->
 <Contributors contributeLink={links.contribute} discordLink={links.discord} />

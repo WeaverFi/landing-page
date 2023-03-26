@@ -7,18 +7,11 @@
 		<span>View your wallet(s) balances all in one place.</span>
 	</div>
 
-	<!-- TXs Info -->
+	<!-- Token Prices Info -->
 	<div>
-		<img src="/images/txs.svg" alt="Transactions">
-		<h3>Transactions</h3>
-		<span>See your entire transaction history on any blockchain.</span>
-	</div>
-
-	<!-- Fees Info -->
-	<div>
-		<img src="/images/fees.svg" alt="Fee History">
-		<h3>Fee History</h3>
-		<span>Keep track of how much you've spent in gas fees.</span>
+		<img src="/images/txs.svg" alt="Token Prices">
+		<h3>Token Prices</h3>
+		<span>See current and historical token prices.</span>
 	</div>
 
 	<!-- NFTs Info -->
@@ -26,6 +19,13 @@
 		<img src="/images/nfts.svg" alt="NFT Portfolio">
 		<h3>NFT Portfolio</h3>
 		<span>View your entire NFT collection in all of its glory.</span>
+	</div>
+
+	<!-- Fees Info -->
+	<div>
+		<img src="/images/fees.svg" alt="Gas Fees">
+		<h3>Gas Fees</h3>
+		<span>Keep track of gas fees on every blockchain.</span>
 	</div>
 
 </section>
